@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #A8A196;
+    color: #ffffff;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px 0;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+.user-input {
+    width: 350px;
+    text-align: center;
+}
+
+.user-input input {
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.user-input input:focus {
+    box-shadow: 0 0 5px #3F2E3E;
+    border: 1px solid #3F2E3E;
+}
+
+.user-input button {
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 1s;
+    outline: none;
+    background-color: #FBA1B7;
+    color: #ffffff;
+    border: 1px solid lightgray;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.user-input button:hover {
+    background: #d3899c;
+}
+
+.to-do-items {
+    width: 500px;
+    margin: auto;
+}
+
+.item {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    padding: 16px;
+    color: #454545;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px #454545;
+    border: 1px solid #454545;
+}
+
+.item i {
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+    }
+    .nav h2 {
+        margin: 10px 0;
+    }
+    .user-input {
+        width: 100%;
+    }
+    .to-do-items {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-input {
+        width: 74%;
+    }
+}
+
+@media (max-width: 220px) {
+    .user-input {
+        width: 60%;
+    }
+}
